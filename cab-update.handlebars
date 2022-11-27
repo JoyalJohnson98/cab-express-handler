@@ -1,0 +1,57 @@
+<div class="container">
+    <h1 class="text-center" style="text-align: center;"> Update Cab Details</h1>
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <form method="post" style="text-align: center; color:white">
+                <div>
+                    <tr>
+                        <td><label for="name">CabName</label></td>
+                        <td><input type="text" name="name" id="name" class="form-control"
+                                value="{{data.dataValues.name}}"></td>
+                    </tr>
+                </div>
+                <br>
+                <div>
+                    <tr>
+                        <td><label for="color">CabColor</label></td>
+                        <td><input type="text" name="color" id="color" class="form-control" -
+                                value="{{data.dataValues.color}}"></td>
+                    </tr>
+                </div>
+                <br>
+                <div>
+                    <tr>
+                        <td>
+                            <label for="cabplateno">CabPlateNo</label>
+                        </td>
+                        <td>
+
+                            <input type="text" name="cabplateno" id="cabplateno" class="form-control"
+                                value="{{data.dataValues.cabplateno}}">
+                        </td>
+                    </tr>
+
+                </div>
+                <br>
+                <div>
+                    <tr>
+                        <td><label for="cabsize">CabSize</label> </td>
+                        <td>
+                            <input type="text" name="cabsize" id="cabsize" class="form-control"
+                                value="{{data.dataValues.cabsize}}">
+                        </td>
+
+                    </tr>
+
+
+                </div>
+                
+               
+                  
+                <div class="d-grid mt-4">
+                    <button class="btn btn-primary"> Confirm Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
