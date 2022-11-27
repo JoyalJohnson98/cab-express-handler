@@ -1,62 +1,48 @@
 const sequelize = require('./db');
 const { DataTypes } = require('sequelize');
 
-const Driver_Details = sequelize.define('driver', {
+const cabSignup = sequelize.define('cabSignup', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
 
     },
-    Name: {
+    firstname: {
         type: DataTypes.STRING(15),
         allowNull: false
 
     },
-    Email: {
+    lastname: {
         type: DataTypes.STRING(16),
-        allowNull: false,
-        unique: true
-
-    },
-    Mobile: {
-        type: DataTypes.STRING(20),
-        allowNull: false,
-        unique: true
-
-
-    },
-    Address: {
-        type: DataTypes.STRING(12),
         allowNull: false
-        
+
     },
-    DOB: {
+    dob: {
         type: DataTypes.DATE,
         allowNull: false
-        
 
     },
-    Experience: {
+    mobile: {
+        type: DataTypes.STRING(12),
+        allowNull: false,
+        unique: true
+
+    },
+    email: {
+        type: DataTypes.STRING(20),
+        allowNull: false,
+        unique: true
+
+    },
+    Password: {
         type: DataTypes.STRING(20),
         allowNull: false
 
-
-    },
-    DL: {
-        type: DataTypes.STRING(20),
-        allowNull: false
-        
-
-    },
-    Exp_DL: {
-        type: DataTypes.STRING(20),
-        allowNull: false
-        
 
     },
 
 
 });
 
-module.exports = Driver_Details;
+module.exports = cabSignup;
